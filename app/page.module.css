@@ -15,6 +15,8 @@ font-family: var(--font-sans);
 
 .grid {
   display: grid;
+  margin-left: 12px;
+  margin-right:12px;
   gap: 24px;
   justify-items: center;
   /* Desktop: 4 columns */
@@ -47,7 +49,7 @@ font-family: var(--font-sans);
 } */
 
 /* colored posters  */
-.poster { width: 100%; height: auto; max-width: 300px;  
+.poster { width: 100%; height: auto; max-width: 500px;  
   opacity: 1;
   transition: transform 0.3s ease, opacity 0.3s ease; }
 
@@ -76,7 +78,7 @@ letter-spacing: -0.5px;
   font-size: 0.9rem;
   letter-spacing: 0.5px;
   position: sticky;
-  line-height:1.2rem;
+  line-height:1.5rem;
   top: 0;
   left: 0;
   z-index: 1000;          /* keep it above posters */
@@ -146,6 +148,7 @@ text-decoration:underline;
   }
   .header {
   font-size: 0.8rem;
+   line-height:1.4rem;
 }
     .sectionTitle {
   font-size: 0.8rem;

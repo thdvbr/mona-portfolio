@@ -28,29 +28,26 @@ return (
   <div className={styles.headerLeft}>
     MONA EL-BIRA 
       </div>
-          {/* <div className={styles.headerLeft}>
-  ARCHIVE PRODUCER & VISUAL RESEARCHER
-    </div> */}
         <a className={styles.headerEmail} href="mailto:monaelbira@gmail.com">CONTACT</a>
         </div>
       <div>ARCHIVE PRODUCER & VISUAL RESEARCHER</div>
-      <div>SELECTED WORKS ↓</div>
+      <div>SELECTED PROJECTS ↓</div>
     </header>
       <section className={styles.grid}>
         <a href="https://charlottestreetfilms.com/" target="_blank">
-          <Image src="/01_SixBillionDollarMan.png" alt="Movie 1" width={300} height={450} className={styles.poster}/>
+          <Image src="/01_SixBillionDollarMan.png" alt="Movie 1" width={400} height={450} className={styles.poster}/>
         </a>
 
         <a href="https://www.riefenstahl-film.de/" target="_blank">
-          <Image src="/02_Riefenstahl.jpg" alt="Movie 2" width={300} height={450} className={styles.poster}/>
+          <Image src="/02_Riefenstahl.jpg" alt="Movie 2" width={400} height={450} className={styles.poster}/>
         </a>
 
         <a href="https://www.imdb.com/de/title/tt11687002/?reasonForLanguagePrompt=browser_header_mismatch" target="_blank">
-          <Image src="/03_Outrun.jpg" alt="Movie 3" width={300} height={450} className={styles.poster}/>
+          <Image src="/03_Outrun.jpg" alt="Movie 3" width={400} height={450} className={styles.poster}/>
         </a>
 
         <a href="https://www.imdb.com/de/title/tt20420316/?reasonForLanguagePrompt=browser_header_mismatch" target="_blank">
-          <Image src="/04_Gladbeck.jpg" alt="Movie 4" width={300} height={450} className={styles.poster}/>
+          <Image src="/04_Gladbeck.jpg" alt="Movie 4" width={400} height={450} className={styles.poster}/>
         </a>
       </section>
 

@@ -75,7 +75,22 @@ letter-spacing: -0.5px;
   /* margin-bottom: 80px; */
   font-size: 0.9rem;
   letter-spacing: 0.5px;
-   margin-bottom: 0.3rem;
+  position: sticky;
+  line-height:1.2rem;
+  top: 0;
+  left: 0;
+  z-index: 1000;          /* keep it above posters */
+  background: white;      /* prevent content bleeding underneath */
+  padding: 1rem 1rem;         /* default large padding */
+    transition: padding 0.25s ease, 
+                background 0.25s ease, 
+                border-bottom 0.25s ease;
+}
+
+.header.shrink {
+    padding: 0.5rem 1rem;         /* smaller padding when scrolled */
+    background: rgba(255, 255, 255, 0.95); /* slightly translucent effect */
+    backdrop-filter: blur(4px);   /* optional nice effect */
 }
 
 .headerTop{
@@ -98,12 +113,6 @@ letter-spacing: -0.5px;
 
 .headerEmail:hover {
 text-decoration:underline;
-}
-
-.sectionTitle {
-  font-family: var(--font-serif);
-  margin-bottom: 20px;
-  font-size: 0.9rem;
 }
 
 .logos { margin-top: 40px; text-align: center; }

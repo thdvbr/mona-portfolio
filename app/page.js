@@ -1,8 +1,26 @@
+"use client";
+
 import Image from "next/image";
 import styles from "./page.module.css";
+import { useEffect } from "react"
 
 
 export default function Home() {
+    useEffect(() => {
+    const handleScroll = () => {
+      const header = document.querySelector(`.${styles.header}`);
+      if (!header) return;
+
+      if (window.scrollY > 50) {
+        header.classList.add(styles.shrink);
+      } else {
+        header.classList.remove(styles.shrink);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 return (
 <main className={styles.main}>
     <header className={styles.header}>
@@ -16,8 +34,8 @@ return (
         <a className={styles.headerEmail} href="mailto:monaelbira@gmail.com">CONTACT</a>
         </div>
       <div>ARCHIVE PRODUCER & VISUAL RESEARCHER</div>
+      <div>SELECTED WORKS ↓</div>
     </header>
-<div className={styles.sectionTitle}>SELECTED WORKS ↓</div>
       <section className={styles.grid}>
         <a href="https://charlottestreetfilms.com/" target="_blank">
           <Image src="/01_SixBillionDollarMan.png" alt="Movie 1" width={300} height={450} className={styles.poster}/>

@@ -78,12 +78,15 @@ letter-spacing: -0.5px;
   font-size: 0.9rem;
   letter-spacing: 0.5px;
   position: sticky;
-  line-height:1.5rem;
+  line-height:1.8rem;
   top: 0;
   left: 0;
   z-index: 1000;          /* keep it above posters */
   background: white;      /* prevent content bleeding underneath */
-  padding: 1rem 1rem;         /* default large padding */
+  padding-top: 1rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  padding-bottom: 0.5rem;        /* default large padding */
     transition: padding 0.25s ease, 
                 background 0.25s ease, 
                 border-bottom 0.25s ease;
